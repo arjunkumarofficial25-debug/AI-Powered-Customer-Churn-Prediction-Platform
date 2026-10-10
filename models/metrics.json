@@ -1,0 +1,36 @@
+{
+  "best_model": "GradientBoosting",
+  "best_params": {
+    "subsample": 0.8,
+    "n_estimators": 200,
+    "max_depth": 3,
+    "learning_rate": 0.03
+  },
+  "threshold": 0.32,
+  "cv_roc_auc": {
+    "LogisticRegression": 0.846,
+    "RandomForest": 0.8223,
+    "GradientBoosting": 0.8481,
+    "XGBoost": 0.8251
+  },
+  "tuned_cv_roc_auc": 0.8507,
+  "test_metrics": {
+    "threshold": 0.32,
+    "accuracy": 0.7743,
+    "precision": 0.556,
+    "recall": 0.7433,
+    "f1": 0.6362,
+    "roc_auc": 0.8461
+  },
+  "test_metrics_at_0.5": {
+    "threshold": 0.5,
+    "accuracy": 0.8062,
+    "precision": 0.676,
+    "recall": 0.5187,
+    "f1": 0.587,
+    "roc_auc": 0.8461
+  },
+  "sklearn_version": "1.9.1",
+  "n_train": 5634,
+  "n_test": 1409
+}
