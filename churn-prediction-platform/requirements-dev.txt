@@ -1,0 +1,6 @@
+-r requirements.txt
+seaborn>=0.12
+jupyter
+ipykernel
+pytest
+xgboost>=2.0   # optional: adds XGBoost to the model comparison
