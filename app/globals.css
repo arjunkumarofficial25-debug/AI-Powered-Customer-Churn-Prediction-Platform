@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --background: oklch(0.16 0.01 250);
+  --foreground: oklch(0.96 0.005 250);
+  --card: oklch(0.2 0.012 250);
+  --muted: oklch(0.25 0.012 250);
+  --muted-foreground: oklch(0.7 0.015 250);
+  --border: oklch(0.3 0.012 250);
+  --primary: oklch(0.78 0.13 175);
+  --primary-foreground: oklch(0.18 0.02 175);
+  --danger: oklch(0.66 0.19 25);
+  --warning: oklch(0.8 0.15 75);
+  --success: oklch(0.72 0.15 155);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-danger: var(--danger);
+  --color-warning: var(--warning);
+  --color-success: var(--success);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+select,
+input {
+  color-scheme: dark;
+}
